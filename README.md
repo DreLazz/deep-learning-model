@@ -1,4 +1,4 @@
-# deep-learning-model
+# Deep-Learning-Model
 # Summary
 
 In this project, we developed a tool aimed at aiding the selection of financial applicants with greater potential for success in their projects. Leveraging neural networks, we created a binary classifier capable of predicting whether applicants would secure funding.
@@ -21,7 +21,7 @@ The variables of EIN and SPECIAL_CONSIDERATIONS were droppped.
 
 # Training and Evalutaion:
 
-For model architecture, I designed a neural network comprising two input layers with a total of 22 neurons. ReLU activation function was applied to the input and hidden layers with 21 neurons, while the output layer employed the Sigmoid function with a single neuron. This configuration facilitated effective feature extraction and learning of nonlinear relationships, making it well-suited for binary classification tasks. The model demonstrated an accuracy of 78%.
+For model architecture, I designed a neural network comprising two input layers with a total of 22 neurons. ReLU activation function was applied to the input and hidden layers with 21 neurons, while the output layer employed the Sigmoid function with a single neuron. I also changed the epochs to 85. This configuration facilitated effective feature extraction and learning of nonlinear relationships, making it well-suited for binary classification tasks. The model demonstrated an accuracy of 78%.
 
 To enhance predictive performance, I introduced the applicant's name as a feature. Additionally, I preprocessed the data by removing outliers in the "CLASSIFICATION" and "APPLICATION_TYPE" fields, excluding those with unique value counts less than 500. Moreover, outliers in the 'NAME' column with counts less than 5 were also filtered out.
 
